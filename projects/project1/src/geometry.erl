@@ -4,11 +4,15 @@
 %%% @doc
 %%%
 %%% @end
-%%% Created : 11. 一月 2016 12:59
+%%% Created : 12. 一月 2016 11:25
 %%%-------------------------------------------------------------------
--module(test1).
+-module(geometry).
 -author("pc").
 
 %% API
--export([]).
+-export([area/1]).
+
+area({rectangle, Width, Height}) ->
+  Width * Height.
+
 
